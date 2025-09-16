@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: e12-deployment
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: e12
+    template:
+        metadata:
+            labels:
+                app: e12
+        spec:
+            containers:
+                - name: e12
+                  image: lauriahlfors/devops-with-kubernetes:1.2
