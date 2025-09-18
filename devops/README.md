@@ -1,17 +1,11 @@
-# Exercise 1.2
+# Exercise 1.4
 
 ### Instructions to run the app
 
 Create deployment
 
 ```bash
-kubectl create deployment <app-name> --image=lauriahlfors/devops-with-kubernetes:1.2
-```
-
-Or replace deployment image with:
-
-```bash
-kubectl set image deployments/<app-name> <app-name>=lauriahlfors/devops-with-kubernetes:1.2
+kubectl apply -f devops/manifests/deployment.yaml
 ```
 
 Get pod names
