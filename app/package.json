@@ -13,10 +13,11 @@
     "license": "ISC",
     "type": "commonjs",
     "devDependencies": {
+        "@types/express": "^5.0.3",
         "@types/node": "^24.5.0",
         "typescript": "^5.9.2"
     },
     "dependencies": {
-        "nanoid": "^5.1.5"
+        "express": "^5.1.0"
     }
 }

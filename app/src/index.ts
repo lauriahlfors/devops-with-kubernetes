@@ -1,17 +1,18 @@
-import { nanoid } from "nanoid";
+import type {
+    Request as ExpressRequest,
+    Response as ExpressResponse,
+} from "express";
+import express from "express";
 
-const generateDateHash = (): string => {
-    return `${new Date().toISOString()}: ${nanoid()}`;
-};
+const app = express();
 
-console.log(`[HASH LOG APP]`);
+const PORT = process.env.PORT || 3000;
 
-// Initial hash
-let hash = generateDateHash();
-console.log(hash);
+app.get("/", (req: ExpressRequest, res: ExpressResponse) => {
+    res.send("Todo App");
+});
 
-// Hash every 5 seconds
-setInterval(() => {
-    hash = generateDateHash();
-    console.log(hash);
-}, 5000);
+app.listen(PORT, () => {
+    // This is the required output message
+    console.log(`Server started in port ${PORT}`);
+});

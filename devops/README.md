@@ -11,7 +11,7 @@ kubectl create deployment app --image=lauriahlfors/devops-with-kubernetes:1.1
 Or replace deployment with:
 
 ```bash
-kubectl set image deployments/app app=lauriahlfors/devops-with-kubernetes:1.1
+kubectl set image deployments/<app-name> <app-name>=lauriahlfors/devops-with-kubernetes:1.2
 ```
 
 Get pod names

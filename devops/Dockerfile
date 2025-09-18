@@ -4,8 +4,10 @@ WORKDIR /usr/src/app
 
 COPY app/package*.json ./
 
-RUN npm install
+RUN --mount=type=cache,target=/root/.npm npm install
 
-COPY app/ ./
+COPY app/ .
+
+RUN npm run build
 
 CMD ["npm", "run", "start"]
