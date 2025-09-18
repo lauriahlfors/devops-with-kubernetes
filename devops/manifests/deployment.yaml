@@ -14,4 +14,4 @@ spec:
         spec:
             containers:
                 - name: app
-                  image: lauriahlfors/devops-with-kubernetes:1.1
+                  image: lauriahlfors/devops-with-kubernetes:1.4
