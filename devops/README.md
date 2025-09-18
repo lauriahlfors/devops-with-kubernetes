@@ -1,14 +1,14 @@
-# Exercise 1.1
+# Exercise 1.2
 
 ### Instructions to run the app
 
 Create deployment
 
 ```bash
-kubectl create deployment app --image=lauriahlfors/devops-with-kubernetes:1.1
+kubectl create deployment <app-name> --image=lauriahlfors/devops-with-kubernetes:1.2
 ```
 
-Or replace deployment with:
+Or replace deployment image with:
 
 ```bash
 kubectl set image deployments/<app-name> <app-name>=lauriahlfors/devops-with-kubernetes:1.2
