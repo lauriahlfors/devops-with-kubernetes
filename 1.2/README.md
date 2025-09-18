@@ -10,9 +10,13 @@ Or replace deployment with:
 kubectl set image deployments/app app=lauriahlfors/devops-with-kubernetes:1.2
 ```
 
+Get pod names
+
 ```bash
 kubectl get pods
 ```
+
+See that the app is running via pod logs
 
 ```bash
 kubectl logs -f pod-name
